@@ -14,8 +14,8 @@ class Solution(object):
         while x*x<n:
                if isPrimes[x]:
                    p=x*x
-                   while p<n :
-                   isPrimes[p]= False
-                   p=x+p
+                   while p < n :
+                       isPrimes[p]= False
+                       p=x+p
                x=x+1   
         return sum(isPrimes)
