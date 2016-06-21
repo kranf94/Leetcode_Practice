@@ -1,6 +1,7 @@
 
 # Time:  O(n)
 # Space: O(n)
+###Still need to figoure out how to use sqrt to reduce the time limition
 
 from math import sqrt
 
@@ -12,13 +13,12 @@ class Solution:
             return 0
         
         is_prime = [True] * n
-        sqr = int( sqrt(n))
         
         num = 0
-        for i in xrange(0, sqr):
+        for i in xrange(2, n):
             if is_prime[i]:
                num += 1
-               for j in xrange(i+i, sqr, i):
+               for j in xrange(i+i, n, i):
                    is_prime[j] = False
                    
         return num
