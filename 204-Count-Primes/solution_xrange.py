@@ -12,10 +12,10 @@ class Solution:
             return 0
         
         is_prime = [True] * n
-        
+        sqr = sqrt(n - 1)
         
         num = 0
-        for i in xrange(2, n):
+        for i in xrange(2, sqr):
             if is_prime[i]:
                num += 1
                for j in xrange(i+i, n, i):
