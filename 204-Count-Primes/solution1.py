@@ -13,7 +13,7 @@ class Solution(object):
         while x*x<n :
               if isPrimes[x]:
                   p=x*x
-                  while p<n
+                  while p<n :
                   isPrimes[p]= False
                   p=x+p
               x=x+1   
