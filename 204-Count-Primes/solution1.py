@@ -4,7 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if n<=2
+        if n<=2:
         return 0;
         
         isPrimes= [True]*n
