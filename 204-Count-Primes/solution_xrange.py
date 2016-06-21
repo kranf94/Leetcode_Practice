@@ -1,7 +1,7 @@
 
 # Time:  O(n)
 # Space: O(n)
-import math from sqrt
+from math import sqrt
 
 class Solution(object):
      def countPrimes(self, n):
