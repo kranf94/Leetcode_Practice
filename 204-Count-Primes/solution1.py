@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         if n<=2:
-        return 0;
+        return 0
         
         isPrimes= [True]*n
         isPrimes[0],isPrimes[1] = False, False
