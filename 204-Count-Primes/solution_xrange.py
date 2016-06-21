@@ -22,3 +22,5 @@ class Solution:
                    is_prime[j] = False
                    
         return num
+        
+####Check http://stackoverflow.com/questions/2068372/fastest-way-to-list-all-primes-below-n for more solutions#####
