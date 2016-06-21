@@ -12,7 +12,7 @@ class Solution:
             return 0
         
         is_prime = [True] * n
-        sqr = sqrt(n - 1)
+        sqr = float( sqrt(n - 1))
         
         num = 0
         for i in xrange(2, sqr):
