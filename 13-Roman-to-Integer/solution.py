@@ -14,10 +14,10 @@ class Solution(object):
         
         last=None
         for x in s :
-             if last and roman_map[x]<last :
+             if last and s[x]<last :
                 sum -= -2*roman_map[x]
              sum += roman_map[x]
-             last=s[x]
+             last=roman_map[x]
         return sum
         
                 
