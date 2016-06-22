@@ -12,7 +12,7 @@ class Solution(object):
         s=s[::-1]
         ###Define the last node to store the value used to compare
         
-        last=none
+        last=None
         for x in s :
              if last and roman_map[x]<last :
                 sum -= -2*roman_map[x]
