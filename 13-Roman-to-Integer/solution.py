@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         roman_map= {"M": 1000, "D":500, "C":100,"L":50 , "X":10, "V":5, "I":1}
-        
+        sum=0
         s=s[::-1]
         ###Define the last node to store the value used to compare
         
@@ -17,7 +17,7 @@ class Solution(object):
              if last and roman_map[x]<last :
                 sum -= -2*roman_map[x]
              sum += roman_map[x]
-             last=roman_map[x]
+             last=s[x]
         return sum
         
                 
