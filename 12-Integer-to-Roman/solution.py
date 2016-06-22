@@ -4,13 +4,13 @@ class Solution(object):
         :type num: int
         :rtype: str
         """
-        roman_num= { 1000,900,500,400,100,90,50,40,10,9,5,4,1}
-        roman_list= { "M","CM","D","CD","C","XC","L","XL" ,"X","IX","V","IV","I"}
+        roman_num= [1000,900,500,400,100,90,50,40,10,9,5,4,1]
+        roman_list= ["M","CM","D","CD","C","XC","L","XL" ,"X","IX","V","IV","I"]
         
         list = ''
         for i in range (0,len(roman_num)) :
-            if num >= roman_num[i]:
+            while num >= roman_num[i]:
                num -= roman_num[i]
-            list += roman_list[i]
+               list += roman_list[i]
         return list
         
