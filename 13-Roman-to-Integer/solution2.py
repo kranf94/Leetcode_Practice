@@ -8,13 +8,13 @@ class Solution(object):
         """
         roman_map= {"M": 1000, "D":500, "C":100, "L":50 ,"X":10, "V":5, "I":1}
         sum=0
-        s=s[::-1]
-        ###Define the last node to store the value used to compare
+       
+       
         last=None
         
         for i in xrange (len(s)) :
-             if i>0 and roman_map[s[i-1]] >roman_map[s[i]]
-                sum -= 2*roman_map[s[i-1]]+roman_map[s[i]]
+             if i>0 and roman_map[s[i]] >roman_map[s[i-1]] :
+                sum += -2*roman_map[s[i-1]]+roman_map[s[i]]
              else:
                 sum += roman_map[s[i]]
  
