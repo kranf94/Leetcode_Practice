@@ -12,6 +12,7 @@ class Solution(object):
         INT_MIN= -1*INT_MAX -1
         
         result = 0
+        i=0
         while i < len(str) and str[i] == " " :
              i += 1
         
