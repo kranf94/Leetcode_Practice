@@ -23,7 +23,7 @@ class Solution(object):
                    return False
                 
                 g=r/3*3+c/3
-                if board[r][c] in grid[g];
+                if board[r][c] in grid[g]:
                    return False
                 
                 grid.[g].add(board[r][c])
