@@ -23,7 +23,7 @@ class Solution(object):
            sign = -1
           
         while i< len (str) and str[i] >='0' and str[i] <='9' :
-            if result > (INT_MAX - (ord(str[i]) -ord(str[0])))/10     ###返回对应的ASCII数值
+            if result > (INT_MAX - (ord(str[i]) -ord(str[0])))/10 :    ###返回对应的ASCII数值
                return INT_MAX if sign >0 else INT_MIN
             result =result*10 +ord(str[i]) -ord(str[0])
             i +=1
