@@ -12,6 +12,8 @@ class Solution(object):
         INT_MIN= -1*INT_MAX -1
         
         result = 0
+    
+            
         i=0
         while i < len(str) and str[i] == " " :
              i += 1
@@ -28,5 +30,6 @@ class Solution(object):
                return INT_MAX if sign >0 else INT_MIN
             result =result*10 +ord(str[i]) -ord(str[0])
             i +=1
+            
         return sign*result
         
