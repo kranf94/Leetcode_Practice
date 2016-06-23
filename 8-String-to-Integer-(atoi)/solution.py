@@ -10,26 +10,28 @@ class Solution(object):
         """
         INT_MAX= (2<<30)-1
         INT_MIN= -1*INT_MAX -1
-        
+
         result = 0
-    
-            
-        i=0
-        while i < len(str) and str[i] == " " :
-             i += 1
         
-        sign =1
-        if str[i] == "+" :
-           i +=1
+        if not str:
+            return result
+        
+        i = 0
+        while i < len(str) and str[i] == " ":
+            i += 1
+        
+        sign = 1
+        if str[i] == "+":
+            i += 1
         elif str[i] == "-":
-           i += 1
-           sign = -1
-          
-        while i< len (str) and str[i] >='0' and str[i] <='9' :
-            if result > (INT_MAX - (ord(str[i]) -ord(str[0])))/10 :    ###返回对应的ASCII数值
-               return INT_MAX if sign >0 else INT_MIN
-            result =result*10 +ord(str[i]) -ord(str[0])
-            i +=1
-            
-        return sign*result
+            sign = -1
+            i += 1
+
+        while i < len(str) and str[i] >= '0' and str[i] <= '9':
+            if result > (INT_MAX - (ord(str[i]) - ord('0'))) / 10:  ###返回对应的ASCII数值
+                return INT_MAX if sign > 0 else INT_MIN
+            result = result * 10 + ord(str[i]) - ord('0')
+            i += 1
         
+        return sign * result
+    
