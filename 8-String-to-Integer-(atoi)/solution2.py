@@ -2,7 +2,7 @@
 
 
 class Solution(object):
-      def atoi(self, str):
+      def myAtoi(self, str):
         INT_MAX = 2147483647; INT_MIN = -2147483648
         sum = 0
         sign = 1
