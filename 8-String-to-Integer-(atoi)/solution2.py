@@ -1,5 +1,8 @@
 ###NT_MAX/10 >= sum和INT_MAX - digit >= sum这两个判断条件确保了不会溢出。
-
+#Notes for Soluton1 
+#chr()根据整数返回对应的字符，也就是讲ascii转换为字符
+#unichr()将整数返回成unicode字符
+#ord（）将字符转换成ascii码
 
 class Solution(object):
       def myAtoi(self, str):
