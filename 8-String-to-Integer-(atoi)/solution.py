@@ -18,7 +18,7 @@ class Solution(object):
         sign =1
         if str[i] == "+" :
            i +=1
-        else str[i] == "-":
+        elif str[i] == "-":
            i += 1
            sign = -1
           
