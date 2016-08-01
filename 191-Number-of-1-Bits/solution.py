@@ -6,7 +6,7 @@ class Solution(object):
         """
         num = '{0:b}'.format(n)
         count = 0
-        for i in len(a):
+        for i in len(n):
             if num[i] == 1:
                 count +=1
         return count
