@@ -7,7 +7,7 @@ class Solution(object):
         results = []
         if len(nums) == 0:
             return results
-        self.dfs(nums, [] , 0 ,results)
+        self.search(sorted(nums), [] , 0 ,results)
         return results
     
     def search(self, nums, path, index, results):
