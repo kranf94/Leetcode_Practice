@@ -1,16 +1,11 @@
 class Solution(object):
-    def search(self, nums, S, index):
-        if index == len(nums):
-            self.results.append(S)
-            return
-        self.search(nums, S+[nums[index]], index+1)
-        self.search(nums, S, index+1)
-     
     def subsets(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        self.results=[]
-        self.search(sorted(nums), [], 0)
-        return self.results
+        res = []
+        nums.sort()
+        for i in range(1<<len(nums)):
+            tmp= []
+            for j in rage(len(nums)):
+                if i & 1 << j:
+                    tmp.append(nums[j])
+            res.append(temp)
+        return res
